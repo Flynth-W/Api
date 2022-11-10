@@ -1,37 +1,25 @@
 import { Model } from "../../deps.ts"
 import type { property  } from "../../deps.ts"
-import type { response  } from "../../deps.ts"
+import { Checks } from "./checks/Checks.ts"
 
-
-function checkAge(min:number,max:number){
-    return (x:number):response=>{
-        if( min <= x && x <= max  ){
-            return {body: x ,statusText:"OK",ok:true}
-        }
-        return {body: x ,statusText:`no esta en los limites ${min} ~ ${max}`,ok:false}
-    }
-}
-
-export type typeUser={
-    name?:property | number
-    age?:property|string
-    img?:property| number
+export type typeProfile={
+    name?:property | string
+    age?:property|number
 }
 
 
-const _modelUser:typeUser={
-    nick:{ check:(x:number):response=>{return {body: x ,statusText:"OK",ok:true}}},
-    name:{ check:(x:string):response=>{return {body: x ,statusText:"OK",ok:true}}},
-    age:{ check:checkAge(18,35)},
+const _modelProfile:typeProfile={
+    name:{ check:Checks.Name(0,15)},
+    age:{ check:Checks.Age(18,35)},
 }
 
-export const UserModel= new Model(_modelUser)
+export const UserProfile= new Model(_modelProfile)
 
-//const user:_typeUser={
-//    nick:49029,
+
+
+//const user:typeProfile={
 //    name:"exampleName" ,
-//    age:19,
 //}
 //
-//console.log( UserModel.Post(user))
+//console.log( UserProfile.Put(user))
 
