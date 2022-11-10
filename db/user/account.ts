@@ -6,4 +6,4 @@ const data={
     clltn:"account"
 }
 
-export const UserClltn=await Connect(data.urlmongo,data.dbs,data.clltn)
+export const accountClltn=await Connect(data.urlmongo,data.dbs,data.clltn)
