@@ -16,9 +16,10 @@ const _modelProfile:typeProfile={
 export const UserProfile= new Model(_modelProfile)
 
 
-
+// Test
 //const user:typeProfile={
 //    name:"exampleName" ,
+//    age:32 ,
 //}
 //
 //console.log( UserProfile.Put(user))
