@@ -10,7 +10,7 @@ export type typeProfile={
 
 const _modelProfile:typeProfile={
     name:{ check:Checks.Name(0,15)},
-    age:{ check:Checks.Age(18,35)},
+    age:{ check:Checks.Number(18,35)},
 }
 
 export const UserProfile= new Model(_modelProfile)
