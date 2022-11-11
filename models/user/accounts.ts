@@ -13,7 +13,7 @@ export type typeAccounts={
 
 const _modelAccounts:typeAccounts={
     account:{ check:Checks.Model(UserAccout)},
-    dataId:{check:Checks.Name(0,100)}
+    dataId:{check:Checks.String(0,100)}
 }
 
 export const UserAccouts= new Model(_modelAccounts)

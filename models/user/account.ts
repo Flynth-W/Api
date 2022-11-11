@@ -9,7 +9,7 @@ export type typeAccount={
 
 
 const _modelAccount:typeAccount={
-    name:{ check:Checks.Name(0,15)},
+    name:{ check:Checks.String(0,15)},
     password:{ check:Checks.Password({min:10,max:20})},
 }
 

@@ -9,7 +9,7 @@ export type typeProfile={
 
 
 const _modelProfile:typeProfile={
-    name:{ check:Checks.Name(0,15)},
+    name:{ check:Checks.String(0,15)},
     age:{ check:Checks.Number(18,35)},
 }
 
