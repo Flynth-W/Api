@@ -1,19 +1,18 @@
 import { serve } from "https://deno.land/std@0.160.0/http/server.ts";
+import { routes } from "./routes/index.ts"
+
 
 const port = 8080;
 
-const handler = async(request: Request,
-    conn: any
-    )=>{
-  const body = `Your user-agent is:\n\n${
-    request.headers.get("user-agent") ?? "Unknown"
-  }`;
-  console.log(request)
-  console.log(await request.json())
-  console.log(request.headers )
-
-  return new Response(body, { status: 200 });
-};
+async function  handler(
+    request: Request,
+//    conn: any
+    ){
+    const _rout:any      =request.headers.get("route") 
+    const _method   = request.method
+    const rout =  JSON.parse(_rout)  
+   return    routes(rout)
+}
 
 
 
