@@ -1,6 +1,6 @@
 import { Model } from "../../deps.ts"
 import type { property  } from "../../deps.ts"
-import { Checks } from "./checks/Checks.ts"
+import { Checks } from "../checks/Checks.ts"
 import type { typeProfile } from "./profile.ts"  
 import { UserProfile } from "./profile.ts"
 

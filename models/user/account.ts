@@ -1,6 +1,6 @@
 import { Model } from "../../deps.ts"
 import type { property  } from "../../deps.ts"
-import { Checks } from "./checks/Checks.ts"
+import { Checks } from "../checks/Checks.ts"
 
 export type typeAccount={
     name?:property | string
