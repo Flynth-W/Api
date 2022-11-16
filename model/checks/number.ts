@@ -1,4 +1,4 @@
-import type { response  } from "../../../deps.ts"
+import type { response  } from "../../deps.ts"
 
 export function _number(min:number,max:number){
     return (x:number):response=>{

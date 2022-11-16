@@ -1,4 +1,4 @@
-import type { response  } from "../../../deps.ts"
+import type { response  } from "../../deps.ts"
 
 export function _model(model:any){
     return (x:Record<never,never>,mtd?:string):response=>{
