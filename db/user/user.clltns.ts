@@ -1,8 +1,8 @@
 import { dataClltn } from "./data.ts";
-import { accountClltn } from "./account.ts";
+import { singClltn } from "./sing.ts";
 
 export const UserDB={
     data:dataClltn ,
-    account:accountClltn
+    sing:singClltn
 }
 
