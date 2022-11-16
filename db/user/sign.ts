@@ -3,7 +3,7 @@ import { Connect  } from "../../deps.ts"
 const data={
     urlmongo:"mongodb://127.0.0.1:8011",
     dbs:"user",
-    clltn:"sing"
+    clltn:"sign"
 }
 
-export const singClltn=await Connect(data.urlmongo,data.dbs,data.clltn)
+export const signClltn=await Connect(data.urlmongo,data.dbs,data.clltn)
