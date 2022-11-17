@@ -1,8 +1,8 @@
-import { dataClltn } from "./data.ts";
-import { logins } from "./logins.ts";
+import { profile } from "./profile.ts"
+import { account } from "./account.ts"
 
 export const UserDB={
-    data:dataClltn ,
-    logins
+    profile ,
+    account
 }
 
