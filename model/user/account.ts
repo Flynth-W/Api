@@ -5,12 +5,14 @@ import { Checks } from "../checks/Checks.ts"
 export type typeAccount={
     name?:property | string
     password?:property|string
+    profileId?:property | string
 }
 
 
 const _modelAccount:typeAccount={
     name:{ check:Checks.String(0,15)},
     password:{ check:Checks.Password({min:10,max:20})},
+    profileId:{check:Checks.IdMongo}
 }
 
 export const UserAccout= new Model(_modelAccount)
