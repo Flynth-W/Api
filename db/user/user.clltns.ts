@@ -1,8 +1,8 @@
 import { dataClltn } from "./data.ts";
-import { signClltn } from "./sign.ts";
+import { logins } from "./logins.ts";
 
 export const UserDB={
     data:dataClltn ,
-    sign:signClltn
+    logins
 }
 
