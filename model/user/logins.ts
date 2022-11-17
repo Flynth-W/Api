@@ -5,18 +5,18 @@ import type { typeAccount } from "./account.ts"
 import { UserAccout } from "./account.ts"
 
 
-export type typeSign={
+export type typeLogins={
     account?:property | typeAccount
     dataId?:property|string
 }
 
 
-const _modelSign:typeSign={
+const _modelLogins:typeLogins={
     account:{ check:Checks.Model(UserAccout)},
     dataId:{check:Checks.String(0,100)}
 }
 
-export const UserSing= new Model(_modelSign)
+export const UserLogins= new Model(_modelLogins)
 
 // Test:
 //const Useracc={
@@ -26,4 +26,4 @@ export const UserSing= new Model(_modelSign)
 //    },
 //    dataId:"23pieroerur"
 //}
-//console.log(UserSing.Put(Useracc))
+//console.log(UserLogins.Put(Useracc))
