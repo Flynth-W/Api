@@ -9,9 +9,8 @@ async function  handler(
 //    conn: any
     ){
     const _rout:any      =request.headers.get("route") 
-    const _method   = request.method
     const rout =  JSON.parse(_rout)  
-    return    routes(rout,_method)
+    return    routes(rout,request)
 }
 
 
