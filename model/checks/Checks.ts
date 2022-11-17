@@ -4,7 +4,8 @@ import { _password } from "./password.ts";
 import { _model } from "./model.ts";
 import { _keys } from "./keys.ts";
 import { _email } from "./email.ts";
-
+import { _idMongo } from "./idMongo.ts";
+import { _nick } from "./nick.ts";
 export class Checks {
     
     static String=_string
@@ -13,4 +14,6 @@ export class Checks {
     static Model=_model
     static Keys=_keys
     static Email=_email
+    static IdMongo=_idMongo
+    static Nick=_nick
 }
