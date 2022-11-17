@@ -1,1 +1,38 @@
 == Deno Simple - Api 
+
+==== Features 
+
+==== Libraries Used
+
+==== Getting Started
+
+==== Directory Structure
+
+==== Setup
+
+==== RUN
+
+==== User Roles and Rights
+
+----
+    user  : read/write user data
+    admin : read/write all  data
+----
+
+==== API Routes
+
+----
+    for users:
+        headers: {
+            'route':"['user','profile']" or
+            'route':"['user','sign']"
+        }
+----
+
+==== Models
+
+==== Controllers
+
+==== Services
+
+
