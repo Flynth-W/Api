@@ -1,5 +1,4 @@
-import { _jwt } from "./jwt.ts"
-
+import {_json} from "./json.ts"
 export class Responses{
-    static Jwt = _jwt
+    static Json = _json
 }

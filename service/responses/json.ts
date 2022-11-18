@@ -1,4 +1,4 @@
-export function _jwt(body:Record<never,never> , status:number){
+export function _json(body:Record<never,never> , status:number){
         const headerDict = {
       'Content-Type': 'application/json',
       'Accept': 'application/json',
