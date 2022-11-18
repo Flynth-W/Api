@@ -1,4 +1,4 @@
-import { _login  }  from "./login.ts"
+import { _login  }  from "./login/main.ts"
 import { _post   }  from "./post/main.ts"
 import { _put    }  from "./put.ts"
 import { _delete }  from "./delete.ts"
