@@ -22,11 +22,15 @@
 ==== API Routes
 
 ----
-    for users:
-        headers: {
-            'route':"['user','profile']" or
-            'route':"['user','sign']"
-        }
+    user -> user/account
+            user/profile
+    
+    admin -> user/account
+             user/profile
+             users/
+             profiles/
+
+
 ----
 
 ==== Models
