@@ -5,6 +5,7 @@ export async function _put(req:Request){
     const jwt = req.headers.get("jwt")
     const user = req.headers.get("user")
     const resp = await Authenticate(jwt,user)
+    
     if(!resp.ok){ return Responses.Json({resp},401) }
     
     const body= await req.json()
