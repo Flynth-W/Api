@@ -15,13 +15,14 @@ const _modelAccount:typeAccount={
     nick:{check:Checks.Nick}
 }
 
-export const UserAccout= new Model(_modelAccount)
+export const UserAccount= new Model(_modelAccount)
 
 
 // Test :
+
 //const user:typeAccount={
 //    name:"exampleName" ,
-//    password:"exampleName" ,
+//    password:"ex" ,
 //}
 //
 //console.log( UserAccout.Post(user))

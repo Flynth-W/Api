@@ -1,5 +1,5 @@
 import { UserDB } from "../../../../db/user/user.clltns.ts"
-import { UserAccout } from "../../../../model/user/account.ts"
+import { UserAccount } from "../../../../model/user/account.ts"
 import { UserProfile } from "../../../../model/user/profile.ts"
 let nick = await UserDB.profile.find({}).toArray()
 nick = [...nick]
