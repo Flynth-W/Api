@@ -1,7 +1,7 @@
 import { _login  }  from "./login/main.ts"
 import { _post   }  from "./post/main.ts"
-import { _put    }  from "./put.ts"
-import { _delete }  from "./delete.ts"
+import { _put    }  from "./put/main.ts"
+import { _delete }  from "./delete/main.ts"
 
 
 export function Account( property:string , req:Request){
