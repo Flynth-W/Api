@@ -12,14 +12,14 @@ const header: Header = {
 };
 
 
-export function _create(body:any){
+export async function _create(body:any){
     try{
         const payload: Payload = {
         //  iss: environmet.JWT.iss,
         //  exp: getNumericDate(300),
           body
         };
-        const jwt =  create(header, payload, JWTkey)
+        const jwt = await create(header, payload, JWTkey)
         return {body:jwt,statusText:"ok",ok:true}
 
     }catch(_e){
