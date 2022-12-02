@@ -33,7 +33,7 @@ async function  onlyName(name:string){
 export async function _Account(body:any){
     const only = await onlyName(body.account.name)
     if( only ){
-        const checkAcount  = UserAccout.Post({...body.account,profileId:"0"})
+        const checkAcount  = UserAccount.Post({...body.account,profileId:"0"})
         const checkProfile = UserProfile.Post({...body.profile,nick:0 })
         if( checkAcount.ok && checkProfile.ok ){
             return create(body)
